@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627">
+<rect width="1200" height="627" fill="#f7f9fc"/>
+<rect x="48" y="48" width="1104" height="531" rx="28" fill="#ffffff" stroke="#d8dee8" stroke-width="2"/>
+<text x="90" y="120" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#177d7d" letter-spacing="3">FRONTIER RESEARCH DEPARTMENT</text>
+<text x="90" y="182" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" fill="#111827">Defensible decisions under changing</text>
+<text x="90" y="236" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" fill="#111827">evidence, authority, and time.</text>
+<line x1="90" y1="278" x2="1110" y2="278" stroke="#d8dee8" stroke-width="2"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="90" y="320" width="185" height="120" rx="18" fill="#eef4f8" stroke="#cbd5e1"/>
+<text x="182.5" y="358" text-anchor="middle" font-size="20" font-weight="700" fill="#0b1525">EVIDENCE</text>
+<text x="182.5" y="392" text-anchor="middle" font-size="15" fill="#475569">claims · provenance</text>
+<text x="182.5" y="416" text-anchor="middle" font-size="15" fill="#475569">timing · availability</text>
+
+<text x="300" y="385" font-size="34" fill="#64748b">→</text>
+
+<rect x="335" y="320" width="185" height="120" rx="18" fill="#eef7f6" stroke="#b8d8d5"/>
+<text x="427.5" y="358" text-anchor="middle" font-size="20" font-weight="700" fill="#0b1525">VERIFY</text>
+<text x="427.5" y="392" text-anchor="middle" font-size="15" fill="#475569">support · integrity</text>
+<text x="427.5" y="416" text-anchor="middle" font-size="15" fill="#475569">dependencies</text>
+
+<text x="545" y="385" font-size="34" fill="#64748b">→</text>
+
+<rect x="580" y="320" width="185" height="120" rx="18" fill="#f4f1f8" stroke="#d7cbe1"/>
+<text x="672.5" y="358" text-anchor="middle" font-size="20" font-weight="700" fill="#0b1525">DECIDE</text>
+<text x="672.5" y="392" text-anchor="middle" font-size="15" fill="#475569">evidence + authority</text>
+<text x="672.5" y="416" text-anchor="middle" font-size="15" fill="#475569">permit action?</text>
+
+<text x="790" y="385" font-size="34" fill="#64748b">→</text>
+
+<rect x="825" y="320" width="285" height="120" rx="18" fill="#fff7ed" stroke="#ead3b0"/>
+<text x="967.5" y="358" text-anchor="middle" font-size="20" font-weight="700" fill="#0b1525">FRONTIER + HISTORY</text>
+<text x="967.5" y="392" text-anchor="middle" font-size="15" fill="#475569">what could change the result</text>
+<text x="967.5" y="416" text-anchor="middle" font-size="15" fill="#475569">and why it was justified then</text>
+</g>
+<text x="90" y="505" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#5b6677">EPM · Governor · TVC · Variant Hunter · FAP-Core</text>
+<text x="90" y="543" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#7a8595">Patrick I. B. Paslay · Founder, FRD</text>
+</svg>
