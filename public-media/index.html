@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FRD | Public Research Overview</title>
+<meta name="description" content="Frontier Research Department (FRD): public-safe overview of research on defensible decisions under changing evidence, authority, and time.">
+<meta property="og:title" content="Frontier Research Department (FRD) | Public Research Overview">
+<meta property="og:description" content="Public-safe research overview, systems map, and synthetic decision-integrity validation artifact.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#111827;--muted:#5b6677;--line:#d8dee8;--soft:#f4f7fa;--navy:#0b1525;--teal:#177d7d;--gold:#b97a16;--purple:#75518c;--blue:#2f617f}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+.wrap{max-width:1080px;margin:auto;padding:48px 28px 80px}.eyebrow{font-size:13px;font-weight:800;letter-spacing:.12em;color:var(--teal);text-transform:uppercase}
+h1{font-size:44px;line-height:1.06;margin:10px 0 14px}.lede{font-size:21px;color:#394457;max-width:860px;margin:0 0 36px}
+.card{border:1px solid var(--line);border-radius:18px;padding:28px;margin:22px 0;background:#fff;box-shadow:0 8px 24px rgba(12,22,36,.05)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+h2{font-size:26px;margin:0 0 15px}h3{font-size:18px;margin:0 0 8px}p{margin:8px 0;color:#2d3748}ul{padding-left:20px;margin:9px 0}
+.badge{display:inline-block;background:var(--navy);color:#fff;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;margin-bottom:16px}
+.step{border-radius:12px;padding:16px;border:1px solid var(--line);background:var(--soft);min-height:150px}.step b{display:block;margin-bottom:8px}
+.program{padding:17px 18px;border-radius:12px;border:1px solid var(--line);margin:10px 0}.program b{font-size:18px}.program small{float:right;color:#697386;font-weight:800}
+.callout{background:var(--navy);color:white;border-radius:14px;padding:22px}.callout p{color:#e6edf7}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.state{border:1px solid var(--line);border-radius:14px;padding:20px}.state .decision{font-size:24px;font-weight:900;margin:6px 0 8px}.t0 .decision{color:#a16207}.t1 .decision{color:#08755b}.t2 .decision{color:#b42318}
+.footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:#697386}
+@media(max-width:800px){h1{font-size:34px}.grid,.timeline,.grid5{grid-template-columns:1fr}.program small{float:none;display:block;margin-top:4px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="eyebrow">Public Research Overview</div>
+<h1>Frontier Research Department (FRD)</h1>
+<p class="lede">Independent research and systems development for defensible decisions under changing evidence, authority, and time.</p>
+
+<section class="card">
+<span class="badge">MISSION</span>
+<p>FRD develops and evaluates systems that determine whether available evidence legitimately supports a decision or state change, preserve what was known and justified at the time, and prevent later information from silently rewriting earlier decision context.</p>
+<div class="grid">
+<div><h2>Research domains</h2><ul>
+<li>Evidentiary provenance and integrity</li>
+<li>Decision assurance and authority boundaries</li>
+<li>Temporal integrity and historical reconstruction</li>
+<li>Uncertainty, contradiction, and revocation handling</li>
+<li>Adversarial and counterfactual evaluation</li>
+<li>Trustworthy automated and agentic decision systems</li>
+</ul></div>
+<div><h2>Systems in development</h2><ul>
+<li><strong>EPM</strong> — provenance, state, and temporal integrity</li>
+<li><strong>TVC</strong> — temporal and counterfactual research</li>
+<li><strong>Governor</strong> — admissibility and authority boundaries</li>
+<li><strong>Variant Hunter</strong> — adversarial testing and edge discovery</li>
+<li><strong>FAP-Core</strong> — applied decision-assurance workflows</li>
+</ul></div>
+</div>
+<h2>Public-safe principles</h2>
+<ul>
+<li>Claims should not exceed the evidence, provenance, authority, and boundaries supporting them.</li>
+<li>Later knowledge must not be laundered into earlier decision context.</li>
+<li>Missing evidence, explicit revocation, and invalid authority are distinct states and should remain distinguishable.</li>
+<li>Auditability requires preserving both the decision and the conditions that made it justified or unjustified at that time.</li>
+</ul>
+<h2>Current validation and benchmark work</h2>
+<p>Public synthetic benchmarks exercise valid approval, required deferral, explicit revocation after approval, and reconstruction of earlier justification. Evaluation considers both unsafe approvals and unnecessary blocking. Where independent verification has not occurred, FRD does not claim it.</p>
+</section>
+
+<section class="card">
+<div class="eyebrow">Public Systems Map</div><h2>How FRD research programs relate</h2>
+<p>Functional relationships only. This map intentionally omits algorithms, thresholds, state-transition internals, and unreleased implementation details.</p>
+<div class="grid5">
+<div class="step"><b>Evidence</b>Claims, records, provenance, timing, and availability entering evaluation.</div>
+<div class="step"><b>Verification</b>Check support, integrity, dependencies, and relevant contradictions.</div>
+<div class="step"><b>Decision assurance</b>Determine whether present evidence and authority legitimately permit a decision.</div>
+<div class="step"><b>Counterfactual analysis</b>Identify consequential changes that could alter the justified conclusion.</div>
+<div class="step"><b>Audit / reconstruction</b>Preserve why the decision was justified at the time and how it later changed.</div>
+</div>
+<div style="margin-top:22px">
+<div class="program"><b>EPM</b><small>FOUNDATION ACROSS THE CHAIN</small><p>Preserves provenance, state context, temporal integrity, uncertainty, and auditable history.</p></div>
+<div class="program"><b>Governor</b><small>VERIFICATION → DECISION</small><p>Constrains admissibility and authority. A verified fact is not automatically permission to act.</p></div>
+<div class="program"><b>Variant Hunter</b><small>ADVERSARIAL LAYER</small><p>Attacks assumptions, edge cases, interacting failures, and apparent equivalence.</p></div>
+<div class="program"><b>TVC</b><small>DECISION → FRONTIER → HISTORY</small><p>Studies change-sensitive temporal and counterfactual relationships without rewriting prior knowledge.</p></div>
+<div class="program"><b>FAP-Core</b><small>APPLICATION / DELIVERY LAYER</small><p>Applies decision-assurance concepts to bounded financial and operational workflows.</p></div>
+</div>
+<div class="callout"><strong>Design objective</strong><p>Make consequential decisions defensible without confusing evidence with authority, later knowledge with earlier knowledge, or caution with correctness.</p></div>
+</section>
+
+<section class="card">
+<div class="eyebrow">Public Synthetic Validation Artifact</div><h2>SYN-AUTH-01 — Decision integrity across time</h2>
+<p>Illustrative benchmark contract. Expected outcomes are specified in advance. This page does not claim independent validation or production execution.</p>
+<h3>Frozen public rule</h3>
+<p><strong>PAY-AUTH-v1.0:</strong> a payment above $1,000 requires a verified approval record bound to the invoice, amount, and an authorized Finance approver. An explicit valid revocation removes present authorization but does not rewrite whether earlier authorization was valid when it existed.</p>
+<p><strong>Fixture:</strong> SYN-AUTH-01 · Synthetic $1,250 invoice</p>
+<p><strong>Output:</strong> decision | execution_permitted | reason_code | evidence_refs | rule_ref</p>
+<div class="timeline">
+<div class="state t0"><b>T0 · 2026-10-25 22:30 UTC</b><div class="decision">DEFER</div><p>Invoice and purchase match are present. No qualifying approval record is available. Execution is not permitted because required authorization evidence is missing.</p><p><strong>Evidence state:</strong> Invoice + purchase match; approval absent.</p></div>
+<div class="state t1"><b>T1 · 2026-10-25 22:35 UTC</b><div class="decision">ALLOW</div><p>A verified current approval from an authorized Finance approver is available and bound to the invoice and amount. Present execution is permitted under the rule.</p><p><strong>Evidence state:</strong> T0 evidence + qualifying approval.</p></div>
+<div class="state t2"><b>T2 · 2026-10-25 22:40 UTC</b><div class="decision">DENY</div><p>A valid explicit revocation is now present. Current authorization is withdrawn. The T1 record remains historically valid as the earlier decision context.</p><p><strong>Evidence state:</strong> T1 evidence + explicit revocation.</p></div>
+</div>
+<h3 style="margin-top:22px">What this benchmark is intended to test</h3>
+<ul>
+<li>Correctly distinguish missing evidence (DEFER) from explicit loss of authorization (DENY).</li>
+<li>Permit action when the frozen rule is satisfied, rather than proving safety by refusing everything.</li>
+<li>Preserve T1 justification after T2 revocation instead of retroactively rewriting history.</li>
+<li>Return the rule and evidence references supporting each decision in a reproducible output contract.</li>
+</ul>
+<p><strong>Epistemic status:</strong> Expected behavior is part of the benchmark contract. Independent comparative results, measured performance, and production guarantees are not claimed on this artifact.</p>
+</section>
+
+<div class="footer">Patrick I. B. Paslay · Founder, Frontier Research Department (FRD) · Public-safe research material</div>
+</main>
+</body>
+</html>
