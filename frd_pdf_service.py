@@ -21,6 +21,11 @@ LINES=[
 'CURRENT VALIDATION AND BENCHMARK WORK',
 'Public synthetic benchmarks exercise valid approval, required deferral, explicit revocation after approval, and reconstruction of earlier justification. Evaluation considers both unsafe approvals and unnecessary blocking. Where independent verification has not occurred, FRD does not claim it.',
 '',
+'LIVE PUBLIC DEMONSTRATIONS',
+'FAP-Insurance: https://fap-core.onrender.com',
+'FAP-Core: https://fap-core-odm4.onrender.com',
+'Legacy EPM Runtime v0.1.2 verification surface: https://epm-runtime-v012.onrender.com',
+'',
 'PUBLIC SYSTEMS MAP',
 'Evidence -> Verification -> Decision Assurance -> Counterfactual Analysis -> Audit / Reconstruction',
 'EPM preserves provenance, state context, temporal integrity, uncertainty, and auditable history. Governor constrains admissibility and authority. Variant Hunter attacks assumptions and edge cases. TVC studies temporal and counterfactual relationships. FAP-Core applies decision-assurance concepts to bounded financial and operational workflows.',
@@ -33,6 +38,11 @@ LINES=[
 '',
 'EPISTEMIC STATUS',
 'Expected behavior is part of the benchmark contract. Independent comparative results, measured performance, and production guarantees are not claimed on this artifact.',
+'',
+'PUBLIC DISCLOSURE & INTELLECTUAL PROPERTY BOUNDARY',
+'This publication is a limited, public-facing overview of FRD research. It intentionally omits source code, complete implementation logic, proprietary algorithms, scoring or weighting methods, internal state-transition mechanisms, private test infrastructure, unreleased experimental results, private datasets, confidential research records, patent-sensitive implementation details, and other nonpublic technical material unless expressly identified as publicly released.',
+'Publication does not grant any express or implied license to proprietary implementations, unpublished technical materials, research assets, software, documentation, or other intellectual property. Functional descriptions identify research boundaries and observable objectives only where stated. No claim of patent issuance, independent validation, production assurance, or other legal or technical status is made unless expressly stated and supported.',
+'Public disclosure record: FRD Public Research Overview | Scope: public-safe, intentionally bounded | Version 1.0 | 2026.',
 '',
 'Patrick I. B. Paslay | Founder, FRD'
 ]
@@ -57,7 +67,7 @@ def build_pdf():
     objs.append('<< /Type /Catalog /Pages 2 0 R >>')
     objs.append(f'<< /Type /Pages /Kids [{" ".join(kids)}] /Count {len(pages)} >>')
     objs.append('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>')
-    heads={'PUBLIC RESEARCH OVERVIEW','MISSION','RESEARCH DOMAINS','SYSTEMS IN DEVELOPMENT','PUBLIC-SAFE PRINCIPLES','CURRENT VALIDATION AND BENCHMARK WORK','PUBLIC SYSTEMS MAP','SYN-AUTH-01 - DECISION INTEGRITY ACROSS TIME','EPISTEMIC STATUS'}
+    heads={'PUBLIC RESEARCH OVERVIEW','MISSION','RESEARCH DOMAINS','SYSTEMS IN DEVELOPMENT','PUBLIC-SAFE PRINCIPLES','CURRENT VALIDATION AND BENCHMARK WORK','LIVE PUBLIC DEMONSTRATIONS','PUBLIC SYSTEMS MAP','SYN-AUTH-01 - DECISION INTEGRITY ACROSS TIME','EPISTEMIC STATUS','PUBLIC DISCLOSURE & INTELLECTUAL PROPERTY BOUNDARY'}
     for idx, lines in enumerate(pages):
         page_obj=4+idx*2; content_obj=page_obj+1
         objs.append(f'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents {content_obj} 0 R >>')
