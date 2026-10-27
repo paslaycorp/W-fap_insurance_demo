@@ -22,15 +22,24 @@ h2{font-size:26px;margin:0 0 15px}h3{font-size:18px;margin:0 0 8px}p{margin:8px 
 .program{padding:17px 18px;border-radius:12px;border:1px solid var(--line);margin:10px 0}.program b{font-size:18px}.program small{float:right;color:#697386;font-weight:800}
 .callout{background:var(--navy);color:white;border-radius:14px;padding:22px}.callout p{color:#e6edf7}
 .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.state{border:1px solid var(--line);border-radius:14px;padding:20px}.state .decision{font-size:24px;font-weight:900;margin:6px 0 8px}.t0 .decision{color:#a16207}.t1 .decision{color:#08755b}.t2 .decision{color:#b42318}
+.hero-logo{width:100%;max-width:980px;display:block;margin:0 0 26px;border:1px solid var(--line);border-radius:18px}
+.notice{border:1px solid #d9b66f;background:#fffaf0;border-radius:14px;padding:18px 20px;margin:18px 0 28px}
+.demo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.demo{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--soft)}
+.demo a{display:inline-block;margin-top:10px;font-weight:800;color:var(--blue);word-break:break-all}
+.asset-links a{display:block;margin:8px 0;color:var(--blue);word-break:break-all}
+.legal{font-size:14px;color:#394457}
 .footer{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:#697386}
-@media(max-width:800px){h1{font-size:34px}.grid,.timeline,.grid5{grid-template-columns:1fr}.program small{float:none;display:block;margin-top:4px}}
+@media(max-width:800px){h1{font-size:34px}.grid,.timeline,.grid5,.demo-grid{grid-template-columns:1fr}.program small{float:none;display:block;margin-top:4px}}
 </style>
 </head>
 <body>
 <main class="wrap">
+<img class="hero-logo" src="frd-logo.svg" alt="Frontier Research Department (FRD) logo">
 <div class="eyebrow">Public Research Overview</div>
 <h1>Frontier Research Department (FRD)</h1>
 <p class="lede">Independent research and systems development for defensible decisions under changing evidence, authority, and time.</p>
+<div class="notice"><strong>Public Disclosure Boundary Notice.</strong> This overview is an intentionally bounded public-facing summary. It does not disclose underlying source code, full implementation logic, proprietary algorithms, scoring or weighting methods, internal state-transition mechanisms, private test infrastructure, unreleased experimental data, confidential research records, or other nonpublic technical material unless expressly identified as publicly released.</div>
 
 <section class="card">
 <span class="badge">MISSION</span>
@@ -61,6 +70,18 @@ h2{font-size:26px;margin:0 0 15px}h3{font-size:18px;margin:0 0 8px}p{margin:8px 
 </ul>
 <h2>Current validation and benchmark work</h2>
 <p>Public synthetic benchmarks exercise valid approval, required deferral, explicit revocation after approval, and reconstruction of earlier justification. Evaluation considers both unsafe approvals and unnecessary blocking. Where independent verification has not occurred, FRD does not claim it.</p>
+</section>
+
+<section class="card">
+<div class="eyebrow">Live Public Demonstrations</div>
+<h2>Runnable FRD-adjacent systems</h2>
+<p>These links point to currently deployed public services. They demonstrate bounded system behavior and deployment surfaces; they should not be interpreted as disclosure of private implementation details or as independent validation of research claims.</p>
+<div class="demo-grid">
+  <div class="demo"><h3>FAP-Insurance</h3><p>Applied insurance/decision-assurance service connected to the FAP delivery stack.</p><a href="https://fap-core.onrender.com" target="_blank" rel="noopener">https://fap-core.onrender.com</a></div>
+  <div class="demo"><h3>FAP-Core</h3><p>Public FAP-Core service for bounded decision-assurance workflows.</p><a href="https://fap-core-odm4.onrender.com" target="_blank" rel="noopener">https://fap-core-odm4.onrender.com</a></div>
+</div>
+<p style="margin-top:18px"><strong>Legacy verification surface:</strong> EPM Runtime v0.1.2 remains deployed for historical/runtime verification. It is not presented as the current EPM production candidate.</p>
+<a href="https://epm-runtime-v012.onrender.com" target="_blank" rel="noopener">https://epm-runtime-v012.onrender.com</a>
 </section>
 
 <section class="card">
@@ -103,6 +124,23 @@ h2{font-size:26px;margin:0 0 15px}h3{font-size:18px;margin:0 0 8px}p{margin:8px 
 <li>Return the rule and evidence references supporting each decision in a reproducible output contract.</li>
 </ul>
 <p><strong>Epistemic status:</strong> Expected behavior is part of the benchmark contract. Independent comparative results, measured performance, and production guarantees are not claimed on this artifact.</p>
+</section>
+
+<section class="card legal">
+<div class="eyebrow">Public Disclosure &amp; Intellectual Property Boundary</div>
+<h2>Disclosure scope</h2>
+<p>This publication is a limited, public-facing overview of research conducted by the Frontier Research Department (FRD) and Patrick I. B. Paslay. It describes research objectives, functional relationships, public validation artifacts, and high-level system concepts without purporting to disclose the complete technical methods by which those systems are implemented.</p>
+<p>Unless expressly identified as publicly released, this publication does not disclose or authorize disclosure of underlying source code, implementation logic, algorithms, scoring or weighting methods, internal state-transition mechanisms, proprietary test infrastructure, unreleased experimental results, private datasets, confidential research records, patent-sensitive implementation details, or other nonpublic technical material.</p>
+<p>Publication of this overview does not grant any express or implied license to proprietary implementations, unpublished technical materials, research assets, software, documentation, or other intellectual property owned or controlled by their respective rights holders.</p>
+<p>Descriptions here should not be interpreted as representing the complete implementation of any referenced system. Functional descriptions identify research boundaries and observable objectives only where stated. Public disclosure of an idea, system name, research objective, benchmark, or high-level functional relationship should not be interpreted as disclosure of undisclosed implementation mechanisms required to produce that functionality.</p>
+<p>No claim of patent issuance, independent validation, production assurance, or other legal or technical status is made unless expressly stated and supported.</p>
+<p><strong>© 2026 Patrick I. B. Paslay / Frontier Research Department (FRD).</strong> All rights reserved as applicable.</p>
+<p><strong>Public disclosure record:</strong> FRD Public Research Overview<br><strong>Disclosure scope:</strong> Public-safe, intentionally bounded<br><strong>Version:</strong> 1.0<br><strong>Publication year:</strong> 2026</p>
+<div class="asset-links">
+  <strong>Presentation assets</strong>
+  <a href="https://frd-public-media-pack.onrender.com/FRD_Public_Media_Pack.pdf" target="_blank" rel="noopener">Direct public PDF</a>
+  <a href="https://frd-linkedin-thumbnail.onrender.com/frd-linkedin-thumbnail.png" target="_blank" rel="noopener">LinkedIn / social preview image</a>
+</div>
 </section>
 
 <div class="footer">Patrick I. B. Paslay · Founder, Frontier Research Department (FRD) · Public-safe research material</div>
